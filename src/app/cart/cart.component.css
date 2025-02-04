@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+  .pl-sm-only {
+    padding-left: 7rem;
+  }
+}
+
+.main {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}

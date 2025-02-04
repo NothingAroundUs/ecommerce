@@ -1,0 +1,111 @@
+<div class="container py-5">
+  <h1 class="text-center">Checkout</h1>
+  <div class="row gy-2">
+    <div class="col-md-7">
+      <div class="card p-4">
+        <h5 class="mb-3">Payment info</h5>
+        <div class="mb-3">
+          <input
+            type="radio"
+            id="creditCard"
+            name="payment"
+            checked
+            class="form-check-input"
+          />
+          <label for="creditCard" class="form-check-label">Credit card</label>
+        </div>
+        <div class="mb-3">
+          <label>Card number</label>
+          <input type="text" class="form-control" placeholder="Card number" />
+        </div>
+        <div class="mb-3">
+          <label>Name on card</label>
+          <input type="text" class="form-control" placeholder="Enter name" />
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label>Exp. date</label>
+            <input type="text" class="form-control" placeholder="MM/YYYY" />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label>CVV</label>
+            <input type="text" class="form-control" placeholder="Enter CVV" />
+          </div>
+        </div>
+        <div class="mb-3">
+          <input
+            type="radio"
+            id="paypal"
+            name="payment"
+            class="form-check-input"
+          />
+          <label for="paypal" class="form-check-label">PayPal</label>
+        </div>
+
+        <h5 class="mt-4">Billing address</h5>
+        <div class="form-check">
+          <input
+            type="radio"
+            id="sameAddress"
+            name="billing"
+            checked
+            class="form-check-input"
+          />
+          <label for="sameAddress" class="form-check-label"
+            >Same as shipping address</label
+          >
+        </div>
+        <div class="form-check">
+          <input
+            type="radio"
+            id="differentAddress"
+            name="billing"
+            class="form-check-input"
+          />
+          <label for="differentAddress" class="form-check-label"
+            >Use a different billing address</label
+          >
+        </div>
+        <div class="mt-4 px-2 d-flex justify-content-between">
+          <a routerLink="/cart"  class="btn btn-link text-black text-decoration-none">← Return to cart</a>
+          <button class="btn btn-primary px-5 py-2">Complete order</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="bg-light p-4 rounded">
+        <h4 class="mb-5">Order summary</h4>
+        <div class="d-flex justify-content-center align-items-center flex-row">
+          <input
+            type="text"
+            placeholder="Coupon Code"
+            class="form-control w-75"
+          />
+          <div class="btn btn-primary ms-2">Apply</div>
+        </div>
+        <hr class="border border-dark" />
+        <div class="row text-secondary">
+          <div class="col-md-6">
+            <p>Subtotal</p>
+            <p>Tax</p>
+            <p>Shipping</p>
+          </div>
+          <div class="col-md-6 text-end">
+            <p>$179.90</p>
+            <p>$7.40</p>
+            <p>$42.90</p>
+          </div>
+        </div>
+        <hr class="border border-dark" />
+        <div class="row">
+          <div class="col-md-6 fs-5">
+            <p>Total</p>
+          </div>
+          <div class="col-md-6 text-end">
+            <p>$223.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
